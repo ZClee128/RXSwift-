@@ -32,6 +32,7 @@
 		84E748A922B7B424003B55AA /* TransformingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E748A822B7B424003B55AA /* TransformingViewController.swift */; };
 		84F85ECB222A5DFE003790E6 /* subjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F85EC9222A5DFE003790E6 /* subjectsViewController.swift */; };
 		84F85ECC222A5DFE003790E6 /* subjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F85ECA222A5DFE003790E6 /* subjectsViewController.xib */; };
+		9BAC076F22C6171300E77EC5 /* FilteringObservablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC076E22C6171300E77EC5 /* FilteringObservablesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		84E748A822B7B424003B55AA /* TransformingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformingViewController.swift; sourceTree = "<group>"; };
 		84F85EC9222A5DFE003790E6 /* subjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subjectsViewController.swift; sourceTree = "<group>"; };
 		84F85ECA222A5DFE003790E6 /* subjectsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = subjectsViewController.xib; sourceTree = "<group>"; };
+		9BAC076E22C6171300E77EC5 /* FilteringObservablesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringObservablesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		840A9C702227969800BB6C1D /* studyRxswift */ = {
 			isa = PBXGroup;
 			children = (
+				9BAC076D22C616F300E77EC5 /* 过滤操作符 */,
 				84E748A722B7B3E7003B55AA /* 变化操作符 */,
 				84F85EC8222A5DE6003790E6 /* subjects */,
 				840A9CA72228F00900BB6C1D /* ui扩展 */,
@@ -206,6 +209,14 @@
 				84F85ECA222A5DFE003790E6 /* subjectsViewController.xib */,
 			);
 			path = subjects;
+			sourceTree = "<group>";
+		};
+		9BAC076D22C616F300E77EC5 /* 过滤操作符 */ = {
+			isa = PBXGroup;
+			children = (
+				9BAC076E22C6171300E77EC5 /* FilteringObservablesViewController.swift */,
+			);
+			path = "过滤操作符";
 			sourceTree = "<group>";
 		};
 		D6336EAA639B30140CAB411A /* Pods */ = {
@@ -368,6 +379,7 @@
 				840A9C962228DBF900BB6C1D /* SubscribeViewController.swift in Sources */,
 				84E748A922B7B424003B55AA /* TransformingViewController.swift in Sources */,
 				840A9C892227BA9800BB6C1D /* PeopleModel.swift in Sources */,
+				9BAC076F22C6171300E77EC5 /* FilteringObservablesViewController.swift in Sources */,
 				84F85ECB222A5DFE003790E6 /* subjectsViewController.swift in Sources */,
 				840A9C8B2227BB1600BB6C1D /* PeopleViewModel.swift in Sources */,
 				840A9C862227B9B600BB6C1D /* PeopleViewController.swift in Sources */,

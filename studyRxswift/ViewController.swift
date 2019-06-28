@@ -30,7 +30,8 @@ struct DataListModel {
         DataModel(className: bindViewController.init(), name: "bindto"),
         DataModel(className: exViewController.init(), name: "extension"),
         DataModel(className: subjectsViewController.init(), name: "subject"),
-        DataModel(className: TransformingViewController.init(), name: "TransformingViewController")
+        DataModel(className: TransformingViewController.init(), name: "TransformingViewController"),
+        DataModel(className: FilteringObservablesViewController.init(), name: "FilteringObservablesViewController")
         ])
 }
 
