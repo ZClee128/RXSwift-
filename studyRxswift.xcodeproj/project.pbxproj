@@ -33,6 +33,14 @@
 		84F85ECB222A5DFE003790E6 /* subjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F85EC9222A5DFE003790E6 /* subjectsViewController.swift */; };
 		84F85ECC222A5DFE003790E6 /* subjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F85ECA222A5DFE003790E6 /* subjectsViewController.xib */; };
 		9BAC076F22C6171300E77EC5 /* FilteringObservablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC076E22C6171300E77EC5 /* FilteringObservablesViewController.swift */; };
+		9BF64DDF22C9F00800184FFB /* ConditionalBooleanOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF64DDE22C9F00800184FFB /* ConditionalBooleanOperatorsViewController.swift */; };
+		9BF64DE222C9F2A800184FFB /* CombiningObservablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF64DE122C9F2A800184FFB /* CombiningObservablesViewController.swift */; };
+		9BF64DE722C9F87800184FFB /* MathematicalAggregateOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF64DE622C9F87800184FFB /* MathematicalAggregateOperatorsViewController.swift */; };
+		9BF64DEA22C9FA8700184FFB /* ConnectableObservableOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF64DE922C9FA8700184FFB /* ConnectableObservableOperatorsViewController.swift */; };
+		9BF64DED22C9FFD100184FFB /* ObservableUtilityOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF64DEC22C9FFD100184FFB /* ObservableUtilityOperatorsViewController.swift */; };
+		9BF64DF022CA028B00184FFB /* ErrorHandlingOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF64DEF22CA028B00184FFB /* ErrorHandlingOperatorsViewController.swift */; };
+		9BF64DF322CA03B500184FFB /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF64DF222CA03B500184FFB /* DebugViewController.swift */; };
+		9BF64DF622CA06F900184FFB /* TraitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF64DF522CA06F900184FFB /* TraitsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +74,14 @@
 		84F85EC9222A5DFE003790E6 /* subjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subjectsViewController.swift; sourceTree = "<group>"; };
 		84F85ECA222A5DFE003790E6 /* subjectsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = subjectsViewController.xib; sourceTree = "<group>"; };
 		9BAC076E22C6171300E77EC5 /* FilteringObservablesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringObservablesViewController.swift; sourceTree = "<group>"; };
+		9BF64DDE22C9F00800184FFB /* ConditionalBooleanOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalBooleanOperatorsViewController.swift; sourceTree = "<group>"; };
+		9BF64DE122C9F2A800184FFB /* CombiningObservablesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombiningObservablesViewController.swift; sourceTree = "<group>"; };
+		9BF64DE622C9F87800184FFB /* MathematicalAggregateOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathematicalAggregateOperatorsViewController.swift; sourceTree = "<group>"; };
+		9BF64DE922C9FA8700184FFB /* ConnectableObservableOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectableObservableOperatorsViewController.swift; sourceTree = "<group>"; };
+		9BF64DEC22C9FFD100184FFB /* ObservableUtilityOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableUtilityOperatorsViewController.swift; sourceTree = "<group>"; };
+		9BF64DEF22CA028B00184FFB /* ErrorHandlingOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlingOperatorsViewController.swift; sourceTree = "<group>"; };
+		9BF64DF222CA03B500184FFB /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
+		9BF64DF522CA06F900184FFB /* TraitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +125,14 @@
 		840A9C702227969800BB6C1D /* studyRxswift */ = {
 			isa = PBXGroup;
 			children = (
+				9BF64DF422CA06BA00184FFB /* 特征序列 */,
+				9BF64DF122CA039C00184FFB /* 调试操作 */,
+				9BF64DEE22CA027000184FFB /* 错误处理 */,
+				9BF64DEB22C9FFBB00184FFB /* 其他操作符 */,
+				9BF64DE822C9FA6400184FFB /* 连接操作符 */,
+				9BF64DE522C9F85C00184FFB /* 算数聚合操作符 */,
+				9BF64DE022C9F29700184FFB /* 结合操作符 */,
+				9BF64DDD22C9EFE800184FFB /* 条件和布尔操作符 */,
 				9BAC076D22C616F300E77EC5 /* 过滤操作符 */,
 				84E748A722B7B3E7003B55AA /* 变化操作符 */,
 				84F85EC8222A5DE6003790E6 /* subjects */,
@@ -219,6 +243,70 @@
 			path = "过滤操作符";
 			sourceTree = "<group>";
 		};
+		9BF64DDD22C9EFE800184FFB /* 条件和布尔操作符 */ = {
+			isa = PBXGroup;
+			children = (
+				9BF64DDE22C9F00800184FFB /* ConditionalBooleanOperatorsViewController.swift */,
+			);
+			path = "条件和布尔操作符";
+			sourceTree = "<group>";
+		};
+		9BF64DE022C9F29700184FFB /* 结合操作符 */ = {
+			isa = PBXGroup;
+			children = (
+				9BF64DE122C9F2A800184FFB /* CombiningObservablesViewController.swift */,
+			);
+			path = "结合操作符";
+			sourceTree = "<group>";
+		};
+		9BF64DE522C9F85C00184FFB /* 算数聚合操作符 */ = {
+			isa = PBXGroup;
+			children = (
+				9BF64DE622C9F87800184FFB /* MathematicalAggregateOperatorsViewController.swift */,
+			);
+			path = "算数聚合操作符";
+			sourceTree = "<group>";
+		};
+		9BF64DE822C9FA6400184FFB /* 连接操作符 */ = {
+			isa = PBXGroup;
+			children = (
+				9BF64DE922C9FA8700184FFB /* ConnectableObservableOperatorsViewController.swift */,
+			);
+			path = "连接操作符";
+			sourceTree = "<group>";
+		};
+		9BF64DEB22C9FFBB00184FFB /* 其他操作符 */ = {
+			isa = PBXGroup;
+			children = (
+				9BF64DEC22C9FFD100184FFB /* ObservableUtilityOperatorsViewController.swift */,
+			);
+			path = "其他操作符";
+			sourceTree = "<group>";
+		};
+		9BF64DEE22CA027000184FFB /* 错误处理 */ = {
+			isa = PBXGroup;
+			children = (
+				9BF64DEF22CA028B00184FFB /* ErrorHandlingOperatorsViewController.swift */,
+			);
+			path = "错误处理";
+			sourceTree = "<group>";
+		};
+		9BF64DF122CA039C00184FFB /* 调试操作 */ = {
+			isa = PBXGroup;
+			children = (
+				9BF64DF222CA03B500184FFB /* DebugViewController.swift */,
+			);
+			path = "调试操作";
+			sourceTree = "<group>";
+		};
+		9BF64DF422CA06BA00184FFB /* 特征序列 */ = {
+			isa = PBXGroup;
+			children = (
+				9BF64DF522CA06F900184FFB /* TraitsViewController.swift */,
+			);
+			path = "特征序列";
+			sourceTree = "<group>";
+		};
 		D6336EAA639B30140CAB411A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,7 +328,6 @@
 				840A9C6B2227969800BB6C1D /* Frameworks */,
 				840A9C6C2227969800BB6C1D /* Resources */,
 				5415827B33428CEE947C4F54 /* [CP] Embed Pods Frameworks */,
-				BB432248720F256C03B8004A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -313,7 +400,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-studyRxswift/Pods-studyRxswift-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-studyRxswift/Pods-studyRxswift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -326,7 +413,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-studyRxswift/Pods-studyRxswift-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-studyRxswift/Pods-studyRxswift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		918EC8842417FF01C35ACD44 /* [CP] Check Pods Manifest.lock */ = {
@@ -347,21 +434,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BB432248720F256C03B8004A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-studyRxswift/Pods-studyRxswift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -369,15 +441,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF64DED22C9FFD100184FFB /* ObservableUtilityOperatorsViewController.swift in Sources */,
+				9BF64DE222C9F2A800184FFB /* CombiningObservablesViewController.swift in Sources */,
 				840A9CA02228E2B300BB6C1D /* DisposeViewController.swift in Sources */,
 				840A9CA52228EA2800BB6C1D /* bindViewController.swift in Sources */,
 				840A9CAA2228F04400BB6C1D /* exViewController.swift in Sources */,
+				9BF64DF622CA06F900184FFB /* TraitsViewController.swift in Sources */,
 				840A9C742227969800BB6C1D /* ViewController.swift in Sources */,
 				840A9C912227C4D200BB6C1D /* ObservableViewController.swift in Sources */,
+				9BF64DDF22C9F00800184FFB /* ConditionalBooleanOperatorsViewController.swift in Sources */,
 				840A9C9B2228DF0100BB6C1D /* doOnViewController.swift in Sources */,
 				840A9C722227969800BB6C1D /* AppDelegate.swift in Sources */,
 				840A9C962228DBF900BB6C1D /* SubscribeViewController.swift in Sources */,
 				84E748A922B7B424003B55AA /* TransformingViewController.swift in Sources */,
+				9BF64DE722C9F87800184FFB /* MathematicalAggregateOperatorsViewController.swift in Sources */,
+				9BF64DEA22C9FA8700184FFB /* ConnectableObservableOperatorsViewController.swift in Sources */,
+				9BF64DF022CA028B00184FFB /* ErrorHandlingOperatorsViewController.swift in Sources */,
+				9BF64DF322CA03B500184FFB /* DebugViewController.swift in Sources */,
 				840A9C892227BA9800BB6C1D /* PeopleModel.swift in Sources */,
 				9BAC076F22C6171300E77EC5 /* FilteringObservablesViewController.swift in Sources */,
 				84F85ECB222A5DFE003790E6 /* subjectsViewController.swift in Sources */,

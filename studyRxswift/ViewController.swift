@@ -31,7 +31,15 @@ struct DataListModel {
         DataModel(className: exViewController.init(), name: "extension"),
         DataModel(className: subjectsViewController.init(), name: "subject"),
         DataModel(className: TransformingViewController.init(), name: "TransformingViewController"),
-        DataModel(className: FilteringObservablesViewController.init(), name: "FilteringObservablesViewController")
+        DataModel(className: FilteringObservablesViewController.init(), name: "FilteringObservablesViewController"),
+        DataModel(className: ConditionalBooleanOperatorsViewController.init(), name: "ConditionalBooleanOperatorsViewController"),
+        DataModel(className: CombiningObservablesViewController.init(), name: "CombiningObservablesViewController"),
+        DataModel(className: MathematicalAggregateOperatorsViewController.init(), name: "MathematicalAggregateOperatorsViewController"),
+        DataModel(className: ConnectableObservableOperatorsViewController.init(), name: "ConnectableObservableOperatorsViewController"),
+        DataModel(className: ObservableUtilityOperatorsViewController.init(), name: "ObservableUtilityOperatorsViewController"),
+        DataModel(className: ErrorHandlingOperatorsViewController.init(), name: "ErrorHandlingOperatorsViewController"),
+        DataModel(className: DebugViewController.init(), name: "DebugViewController"),
+        DataModel(className: TraitsViewController.init(), name: "TraitsViewController")
         ])
 }
 
