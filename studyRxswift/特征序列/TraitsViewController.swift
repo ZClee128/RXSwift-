@@ -23,6 +23,7 @@ class TraitsViewController: UIViewController {
         self.asSingle()
         self.Completable()
         self.Maybe()
+        self.asMaybe()
     }
 
     func Single() {
