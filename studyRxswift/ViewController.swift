@@ -39,7 +39,10 @@ struct DataListModel {
         DataModel(className: ObservableUtilityOperatorsViewController.init(), name: "ObservableUtilityOperatorsViewController"),
         DataModel(className: ErrorHandlingOperatorsViewController.init(), name: "ErrorHandlingOperatorsViewController"),
         DataModel(className: DebugViewController.init(), name: "DebugViewController"),
-        DataModel(className: TraitsViewController.init(), name: "TraitsViewController")
+        DataModel(className: TraitsViewController.init(), name: "TraitsViewController"),
+        DataModel(className: DriverViewController.init(), name: "DriverViewController"),
+        DataModel(className: ControlPropertyViewController.init(), name: "ControlPropertyViewController"),
+        DataModel(className: SchedulersViewController.init(), name: "SchedulersViewController")
         ])
 }
 

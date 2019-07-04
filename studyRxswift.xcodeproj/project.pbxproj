@@ -32,6 +32,9 @@
 		84E748A922B7B424003B55AA /* TransformingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E748A822B7B424003B55AA /* TransformingViewController.swift */; };
 		84F85ECB222A5DFE003790E6 /* subjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F85EC9222A5DFE003790E6 /* subjectsViewController.swift */; };
 		84F85ECC222A5DFE003790E6 /* subjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F85ECA222A5DFE003790E6 /* subjectsViewController.xib */; };
+		9B704FEF22CDA552003E8DF1 /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B704FEE22CDA552003E8DF1 /* DriverViewController.swift */; };
+		9B704FF222CDD39C003E8DF1 /* ControlPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B704FF122CDD39C003E8DF1 /* ControlPropertyViewController.swift */; };
+		9B704FF522CDD89F003E8DF1 /* SchedulersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B704FF422CDD89F003E8DF1 /* SchedulersViewController.swift */; };
 		9BAC076F22C6171300E77EC5 /* FilteringObservablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC076E22C6171300E77EC5 /* FilteringObservablesViewController.swift */; };
 		9BF64DDF22C9F00800184FFB /* ConditionalBooleanOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF64DDE22C9F00800184FFB /* ConditionalBooleanOperatorsViewController.swift */; };
 		9BF64DE222C9F2A800184FFB /* CombiningObservablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF64DE122C9F2A800184FFB /* CombiningObservablesViewController.swift */; };
@@ -73,6 +76,9 @@
 		84E748A822B7B424003B55AA /* TransformingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformingViewController.swift; sourceTree = "<group>"; };
 		84F85EC9222A5DFE003790E6 /* subjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subjectsViewController.swift; sourceTree = "<group>"; };
 		84F85ECA222A5DFE003790E6 /* subjectsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = subjectsViewController.xib; sourceTree = "<group>"; };
+		9B704FEE22CDA552003E8DF1 /* DriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewController.swift; sourceTree = "<group>"; };
+		9B704FF122CDD39C003E8DF1 /* ControlPropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPropertyViewController.swift; sourceTree = "<group>"; };
+		9B704FF422CDD89F003E8DF1 /* SchedulersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulersViewController.swift; sourceTree = "<group>"; };
 		9BAC076E22C6171300E77EC5 /* FilteringObservablesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringObservablesViewController.swift; sourceTree = "<group>"; };
 		9BF64DDE22C9F00800184FFB /* ConditionalBooleanOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalBooleanOperatorsViewController.swift; sourceTree = "<group>"; };
 		9BF64DE122C9F2A800184FFB /* CombiningObservablesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombiningObservablesViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +131,9 @@
 		840A9C702227969800BB6C1D /* studyRxswift */ = {
 			isa = PBXGroup;
 			children = (
+				9B704FF322CDD894003E8DF1 /* Schedulers */,
+				9B704FF022CDD356003E8DF1 /* 特征序列3 */,
+				9B704FED22CDA544003E8DF1 /* Driver */,
 				9BF64DF422CA06BA00184FFB /* 特征序列 */,
 				9BF64DF122CA039C00184FFB /* 调试操作 */,
 				9BF64DEE22CA027000184FFB /* 错误处理 */,
@@ -233,6 +242,30 @@
 				84F85ECA222A5DFE003790E6 /* subjectsViewController.xib */,
 			);
 			path = subjects;
+			sourceTree = "<group>";
+		};
+		9B704FED22CDA544003E8DF1 /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				9B704FEE22CDA552003E8DF1 /* DriverViewController.swift */,
+			);
+			path = Driver;
+			sourceTree = "<group>";
+		};
+		9B704FF022CDD356003E8DF1 /* 特征序列3 */ = {
+			isa = PBXGroup;
+			children = (
+				9B704FF122CDD39C003E8DF1 /* ControlPropertyViewController.swift */,
+			);
+			path = "特征序列3";
+			sourceTree = "<group>";
+		};
+		9B704FF322CDD894003E8DF1 /* Schedulers */ = {
+			isa = PBXGroup;
+			children = (
+				9B704FF422CDD89F003E8DF1 /* SchedulersViewController.swift */,
+			);
+			path = Schedulers;
 			sourceTree = "<group>";
 		};
 		9BAC076D22C616F300E77EC5 /* 过滤操作符 */ = {
@@ -446,11 +479,13 @@
 				840A9CA02228E2B300BB6C1D /* DisposeViewController.swift in Sources */,
 				840A9CA52228EA2800BB6C1D /* bindViewController.swift in Sources */,
 				840A9CAA2228F04400BB6C1D /* exViewController.swift in Sources */,
+				9B704FEF22CDA552003E8DF1 /* DriverViewController.swift in Sources */,
 				9BF64DF622CA06F900184FFB /* TraitsViewController.swift in Sources */,
 				840A9C742227969800BB6C1D /* ViewController.swift in Sources */,
 				840A9C912227C4D200BB6C1D /* ObservableViewController.swift in Sources */,
 				9BF64DDF22C9F00800184FFB /* ConditionalBooleanOperatorsViewController.swift in Sources */,
 				840A9C9B2228DF0100BB6C1D /* doOnViewController.swift in Sources */,
+				9B704FF222CDD39C003E8DF1 /* ControlPropertyViewController.swift in Sources */,
 				840A9C722227969800BB6C1D /* AppDelegate.swift in Sources */,
 				840A9C962228DBF900BB6C1D /* SubscribeViewController.swift in Sources */,
 				84E748A922B7B424003B55AA /* TransformingViewController.swift in Sources */,
@@ -462,6 +497,7 @@
 				9BAC076F22C6171300E77EC5 /* FilteringObservablesViewController.swift in Sources */,
 				84F85ECB222A5DFE003790E6 /* subjectsViewController.swift in Sources */,
 				840A9C8B2227BB1600BB6C1D /* PeopleViewModel.swift in Sources */,
+				9B704FF522CDD89F003E8DF1 /* SchedulersViewController.swift in Sources */,
 				840A9C862227B9B600BB6C1D /* PeopleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

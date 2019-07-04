@@ -158,7 +158,7 @@ class TraitsViewController: UIViewController {
  创建 Single 和创建 Observable 非常相似。下面代码我们定义一个用于生成网络请求 Single 的函数
  获取豆瓣某频道下的歌曲信息
  */
-func getPlaylist(_ channel: String) -> Single<[String: Any]> {
+public func getPlaylist(_ channel: String) -> Single<[String: Any]> {
     return Single<[String: Any]>.create { single in
         let url = "https://douban.fm/j/mine/playlist?"
             + "type=n&channel=\(channel)&from=mainsite"
