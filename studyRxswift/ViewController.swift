@@ -42,7 +42,9 @@ struct DataListModel {
         DataModel(className: TraitsViewController.init(), name: "TraitsViewController"),
         DataModel(className: DriverViewController.init(), name: "DriverViewController"),
         DataModel(className: ControlPropertyViewController.init(), name: "ControlPropertyViewController"),
-        DataModel(className: SchedulersViewController.init(), name: "SchedulersViewController")
+        DataModel(className: SchedulersViewController.init(), name: "SchedulersViewController"),
+        DataModel(className: UIlabelViewController.init(), name: "UIlabelViewController"),
+        DataModel(className: TextViewController.init(), name: "TextViewController")
         ])
 }
 
