@@ -44,7 +44,14 @@ struct DataListModel {
         DataModel(className: ControlPropertyViewController.init(), name: "ControlPropertyViewController"),
         DataModel(className: SchedulersViewController.init(), name: "SchedulersViewController"),
         DataModel(className: UIlabelViewController.init(), name: "UIlabelViewController"),
-        DataModel(className: TextViewController.init(), name: "TextViewController")
+        DataModel(className: TextViewController.init(), name: "TextViewController"),
+        DataModel(className: UIButtonViewController.init(), name: "UIButtonViewController"),
+        DataModel(className: SwitchViewController.init(), name: "SwitchViewController"),
+        DataModel(className: UIActivityIndicatorViewController.init(), name: "UIActivityIndicatorViewController"),
+        DataModel(className: UISliderViewController.init(), name: "UISliderViewController"),
+        DataModel(className: BidirectionalDataViewController.init(), name: "BidirectionalDataViewController"),
+        DataModel(className: UIGestureRecognizerViewController.init(), name: "UIGestureRecognizerViewController"),
+        DataModel(className: UIDatePickerViewController.init(), name: "UIDatePickerViewController")
         ])
 }
 

@@ -37,6 +37,14 @@
 		9B704FF522CDD89F003E8DF1 /* SchedulersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B704FF422CDD89F003E8DF1 /* SchedulersViewController.swift */; };
 		9B7A970522D3223B00A51953 /* UIlabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A970422D3223B00A51953 /* UIlabelViewController.swift */; };
 		9B7A970822D325B400A51953 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7A970722D325B400A51953 /* TextViewController.swift */; };
+		9B8D029722EE8C880004A4FB /* BidirectionalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D029622EE8C880004A4FB /* BidirectionalDataViewController.swift */; };
+		9B8D029922EE922F0004A4FB /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D029822EE922F0004A4FB /* Operators.swift */; };
+		9B8D029C22EE99A70004A4FB /* UIGestureRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D029B22EE99A70004A4FB /* UIGestureRecognizerViewController.swift */; };
+		9B8D029F22EE9C900004A4FB /* UIDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D029E22EE9C900004A4FB /* UIDatePickerViewController.swift */; };
+		9B91E8C322EAE9F7004C375F /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B91E8C222EAE9F7004C375F /* SwitchViewController.swift */; };
+		9B91E8C722EAF703004C375F /* UIActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B91E8C622EAF703004C375F /* UIActivityIndicatorViewController.swift */; };
+		9B91E8CA22EAFED5004C375F /* UISliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B91E8C922EAFED5004C375F /* UISliderViewController.swift */; };
+		9B91E8CC22EAFF78004C375F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B91E8CB22EAFF78004C375F /* BaseViewController.swift */; };
 		9BAC076F22C6171300E77EC5 /* FilteringObservablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC076E22C6171300E77EC5 /* FilteringObservablesViewController.swift */; };
 		9BF64DDF22C9F00800184FFB /* ConditionalBooleanOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF64DDE22C9F00800184FFB /* ConditionalBooleanOperatorsViewController.swift */; };
 		9BF64DE222C9F2A800184FFB /* CombiningObservablesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF64DE122C9F2A800184FFB /* CombiningObservablesViewController.swift */; };
@@ -46,6 +54,7 @@
 		9BF64DF022CA028B00184FFB /* ErrorHandlingOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF64DEF22CA028B00184FFB /* ErrorHandlingOperatorsViewController.swift */; };
 		9BF64DF322CA03B500184FFB /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF64DF222CA03B500184FFB /* DebugViewController.swift */; };
 		9BF64DF622CA06F900184FFB /* TraitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF64DF522CA06F900184FFB /* TraitsViewController.swift */; };
+		9BF9925E22E69F0100C17A07 /* UIButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF9925D22E69F0100C17A07 /* UIButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +92,14 @@
 		9B704FF422CDD89F003E8DF1 /* SchedulersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulersViewController.swift; sourceTree = "<group>"; };
 		9B7A970422D3223B00A51953 /* UIlabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIlabelViewController.swift; sourceTree = "<group>"; };
 		9B7A970722D325B400A51953 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		9B8D029622EE8C880004A4FB /* BidirectionalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionalDataViewController.swift; sourceTree = "<group>"; };
+		9B8D029822EE922F0004A4FB /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		9B8D029B22EE99A70004A4FB /* UIGestureRecognizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGestureRecognizerViewController.swift; sourceTree = "<group>"; };
+		9B8D029E22EE9C900004A4FB /* UIDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePickerViewController.swift; sourceTree = "<group>"; };
+		9B91E8C222EAE9F7004C375F /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		9B91E8C622EAF703004C375F /* UIActivityIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewController.swift; sourceTree = "<group>"; };
+		9B91E8C922EAFED5004C375F /* UISliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderViewController.swift; sourceTree = "<group>"; };
+		9B91E8CB22EAFF78004C375F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9BAC076E22C6171300E77EC5 /* FilteringObservablesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringObservablesViewController.swift; sourceTree = "<group>"; };
 		9BF64DDE22C9F00800184FFB /* ConditionalBooleanOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalBooleanOperatorsViewController.swift; sourceTree = "<group>"; };
 		9BF64DE122C9F2A800184FFB /* CombiningObservablesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombiningObservablesViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +109,7 @@
 		9BF64DEF22CA028B00184FFB /* ErrorHandlingOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlingOperatorsViewController.swift; sourceTree = "<group>"; };
 		9BF64DF222CA03B500184FFB /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
 		9BF64DF522CA06F900184FFB /* TraitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitsViewController.swift; sourceTree = "<group>"; };
+		9BF9925D22E69F0100C17A07 /* UIButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +153,13 @@
 		840A9C702227969800BB6C1D /* studyRxswift */ = {
 			isa = PBXGroup;
 			children = (
+				9B8D029D22EE9C860004A4FB /* UIDatePicker */,
+				9B8D029A22EE999A0004A4FB /* UIGestureRecognizer */,
+				9B8D029522EE8C650004A4FB /* BidirectionalData */,
+				9B91E8C822EAFEA4004C375F /* UISlider */,
+				9B91E8C522EAF6F5004C375F /* UIActivityIndicatorView */,
+				9B91E8C122EAE98E004C375F /* UISwitch */,
+				9BF9925C22E69EDB00C17A07 /* Button */,
 				9B7A970622D3259600A51953 /* TextView */,
 				9B7A970322D3222000A51953 /* UILabel */,
 				9B704FF322CDD894003E8DF1 /* Schedulers */,
@@ -164,6 +189,8 @@
 				840A9C782227969A00BB6C1D /* Assets.xcassets */,
 				840A9C7A2227969A00BB6C1D /* LaunchScreen.storyboard */,
 				840A9C7D2227969A00BB6C1D /* Info.plist */,
+				9B91E8CB22EAFF78004C375F /* BaseViewController.swift */,
+				9B8D029822EE922F0004A4FB /* Operators.swift */,
 			);
 			path = studyRxswift;
 			sourceTree = "<group>";
@@ -290,6 +317,54 @@
 			path = TextView;
 			sourceTree = "<group>";
 		};
+		9B8D029522EE8C650004A4FB /* BidirectionalData */ = {
+			isa = PBXGroup;
+			children = (
+				9B8D029622EE8C880004A4FB /* BidirectionalDataViewController.swift */,
+			);
+			path = BidirectionalData;
+			sourceTree = "<group>";
+		};
+		9B8D029A22EE999A0004A4FB /* UIGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				9B8D029B22EE99A70004A4FB /* UIGestureRecognizerViewController.swift */,
+			);
+			path = UIGestureRecognizer;
+			sourceTree = "<group>";
+		};
+		9B8D029D22EE9C860004A4FB /* UIDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				9B8D029E22EE9C900004A4FB /* UIDatePickerViewController.swift */,
+			);
+			path = UIDatePicker;
+			sourceTree = "<group>";
+		};
+		9B91E8C122EAE98E004C375F /* UISwitch */ = {
+			isa = PBXGroup;
+			children = (
+				9B91E8C222EAE9F7004C375F /* SwitchViewController.swift */,
+			);
+			path = UISwitch;
+			sourceTree = "<group>";
+		};
+		9B91E8C522EAF6F5004C375F /* UIActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				9B91E8C622EAF703004C375F /* UIActivityIndicatorViewController.swift */,
+			);
+			path = UIActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		9B91E8C822EAFEA4004C375F /* UISlider */ = {
+			isa = PBXGroup;
+			children = (
+				9B91E8C922EAFED5004C375F /* UISliderViewController.swift */,
+			);
+			path = UISlider;
+			sourceTree = "<group>";
+		};
 		9BAC076D22C616F300E77EC5 /* 过滤操作符 */ = {
 			isa = PBXGroup;
 			children = (
@@ -360,6 +435,14 @@
 				9BF64DF522CA06F900184FFB /* TraitsViewController.swift */,
 			);
 			path = "特征序列";
+			sourceTree = "<group>";
+		};
+		9BF9925C22E69EDB00C17A07 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				9BF9925D22E69F0100C17A07 /* UIButtonViewController.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		D6336EAA639B30140CAB411A /* Pods */ = {
@@ -500,6 +583,7 @@
 				9BF64DE222C9F2A800184FFB /* CombiningObservablesViewController.swift in Sources */,
 				840A9CA02228E2B300BB6C1D /* DisposeViewController.swift in Sources */,
 				840A9CA52228EA2800BB6C1D /* bindViewController.swift in Sources */,
+				9B8D029F22EE9C900004A4FB /* UIDatePickerViewController.swift in Sources */,
 				840A9CAA2228F04400BB6C1D /* exViewController.swift in Sources */,
 				9B7A970822D325B400A51953 /* TextViewController.swift in Sources */,
 				9B704FEF22CDA552003E8DF1 /* DriverViewController.swift in Sources */,
@@ -508,11 +592,17 @@
 				840A9C912227C4D200BB6C1D /* ObservableViewController.swift in Sources */,
 				9BF64DDF22C9F00800184FFB /* ConditionalBooleanOperatorsViewController.swift in Sources */,
 				840A9C9B2228DF0100BB6C1D /* doOnViewController.swift in Sources */,
+				9BF9925E22E69F0100C17A07 /* UIButtonViewController.swift in Sources */,
+				9B91E8CC22EAFF78004C375F /* BaseViewController.swift in Sources */,
 				9B704FF222CDD39C003E8DF1 /* ControlPropertyViewController.swift in Sources */,
 				840A9C722227969800BB6C1D /* AppDelegate.swift in Sources */,
+				9B91E8C722EAF703004C375F /* UIActivityIndicatorViewController.swift in Sources */,
 				9B7A970522D3223B00A51953 /* UIlabelViewController.swift in Sources */,
 				840A9C962228DBF900BB6C1D /* SubscribeViewController.swift in Sources */,
+				9B8D029C22EE99A70004A4FB /* UIGestureRecognizerViewController.swift in Sources */,
+				9B91E8C322EAE9F7004C375F /* SwitchViewController.swift in Sources */,
 				84E748A922B7B424003B55AA /* TransformingViewController.swift in Sources */,
+				9B91E8CA22EAFED5004C375F /* UISliderViewController.swift in Sources */,
 				9BF64DE722C9F87800184FFB /* MathematicalAggregateOperatorsViewController.swift in Sources */,
 				9BF64DEA22C9FA8700184FFB /* ConnectableObservableOperatorsViewController.swift in Sources */,
 				9BF64DF022CA028B00184FFB /* ErrorHandlingOperatorsViewController.swift in Sources */,
@@ -520,7 +610,9 @@
 				840A9C892227BA9800BB6C1D /* PeopleModel.swift in Sources */,
 				9BAC076F22C6171300E77EC5 /* FilteringObservablesViewController.swift in Sources */,
 				84F85ECB222A5DFE003790E6 /* subjectsViewController.swift in Sources */,
+				9B8D029922EE922F0004A4FB /* Operators.swift in Sources */,
 				840A9C8B2227BB1600BB6C1D /* PeopleViewModel.swift in Sources */,
+				9B8D029722EE8C880004A4FB /* BidirectionalDataViewController.swift in Sources */,
 				9B704FF522CDD89F003E8DF1 /* SchedulersViewController.swift in Sources */,
 				840A9C862227B9B600BB6C1D /* PeopleViewController.swift in Sources */,
 			);
