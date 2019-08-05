@@ -32,6 +32,9 @@
 		84E748A922B7B424003B55AA /* TransformingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E748A822B7B424003B55AA /* TransformingViewController.swift */; };
 		84F85ECB222A5DFE003790E6 /* subjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F85EC9222A5DFE003790E6 /* subjectsViewController.swift */; };
 		84F85ECC222A5DFE003790E6 /* subjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F85ECA222A5DFE003790E6 /* subjectsViewController.xib */; };
+		9B083DBB22F7C034008C8057 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B083DBA22F7C034008C8057 /* TableViewController.swift */; };
+		9B083DBD22F7D9B3008C8057 /* TableView2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B083DBC22F7D9B3008C8057 /* TableView2Controller.swift */; };
+		9B083DC122F809AF008C8057 /* SeachTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B083DC022F809AF008C8057 /* SeachTableViewController.swift */; };
 		9B704FEF22CDA552003E8DF1 /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B704FEE22CDA552003E8DF1 /* DriverViewController.swift */; };
 		9B704FF222CDD39C003E8DF1 /* ControlPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B704FF122CDD39C003E8DF1 /* ControlPropertyViewController.swift */; };
 		9B704FF522CDD89F003E8DF1 /* SchedulersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B704FF422CDD89F003E8DF1 /* SchedulersViewController.swift */; };
@@ -87,6 +90,9 @@
 		84E748A822B7B424003B55AA /* TransformingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformingViewController.swift; sourceTree = "<group>"; };
 		84F85EC9222A5DFE003790E6 /* subjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subjectsViewController.swift; sourceTree = "<group>"; };
 		84F85ECA222A5DFE003790E6 /* subjectsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = subjectsViewController.xib; sourceTree = "<group>"; };
+		9B083DBA22F7C034008C8057 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		9B083DBC22F7D9B3008C8057 /* TableView2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView2Controller.swift; sourceTree = "<group>"; };
+		9B083DC022F809AF008C8057 /* SeachTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeachTableViewController.swift; sourceTree = "<group>"; };
 		9B704FEE22CDA552003E8DF1 /* DriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewController.swift; sourceTree = "<group>"; };
 		9B704FF122CDD39C003E8DF1 /* ControlPropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPropertyViewController.swift; sourceTree = "<group>"; };
 		9B704FF422CDD89F003E8DF1 /* SchedulersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulersViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +159,7 @@
 		840A9C702227969800BB6C1D /* studyRxswift */ = {
 			isa = PBXGroup;
 			children = (
+				9B083DB922F7C007008C8057 /* UITableview */,
 				9B8D029D22EE9C860004A4FB /* UIDatePicker */,
 				9B8D029A22EE999A0004A4FB /* UIGestureRecognizer */,
 				9B8D029522EE8C650004A4FB /* BidirectionalData */,
@@ -275,6 +282,16 @@
 				84F85ECA222A5DFE003790E6 /* subjectsViewController.xib */,
 			);
 			path = subjects;
+			sourceTree = "<group>";
+		};
+		9B083DB922F7C007008C8057 /* UITableview */ = {
+			isa = PBXGroup;
+			children = (
+				9B083DBA22F7C034008C8057 /* TableViewController.swift */,
+				9B083DBC22F7D9B3008C8057 /* TableView2Controller.swift */,
+				9B083DC022F809AF008C8057 /* SeachTableViewController.swift */,
+			);
+			path = UITableview;
 			sourceTree = "<group>";
 		};
 		9B704FED22CDA544003E8DF1 /* Driver */ = {
@@ -539,14 +556,18 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-studyRxswift/Pods-studyRxswift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +606,7 @@
 				840A9CA52228EA2800BB6C1D /* bindViewController.swift in Sources */,
 				9B8D029F22EE9C900004A4FB /* UIDatePickerViewController.swift in Sources */,
 				840A9CAA2228F04400BB6C1D /* exViewController.swift in Sources */,
+				9B083DC122F809AF008C8057 /* SeachTableViewController.swift in Sources */,
 				9B7A970822D325B400A51953 /* TextViewController.swift in Sources */,
 				9B704FEF22CDA552003E8DF1 /* DriverViewController.swift in Sources */,
 				9BF64DF622CA06F900184FFB /* TraitsViewController.swift in Sources */,
@@ -601,6 +623,7 @@
 				840A9C962228DBF900BB6C1D /* SubscribeViewController.swift in Sources */,
 				9B8D029C22EE99A70004A4FB /* UIGestureRecognizerViewController.swift in Sources */,
 				9B91E8C322EAE9F7004C375F /* SwitchViewController.swift in Sources */,
+				9B083DBD22F7D9B3008C8057 /* TableView2Controller.swift in Sources */,
 				84E748A922B7B424003B55AA /* TransformingViewController.swift in Sources */,
 				9B91E8CA22EAFED5004C375F /* UISliderViewController.swift in Sources */,
 				9BF64DE722C9F87800184FFB /* MathematicalAggregateOperatorsViewController.swift in Sources */,
@@ -608,6 +631,7 @@
 				9BF64DF022CA028B00184FFB /* ErrorHandlingOperatorsViewController.swift in Sources */,
 				9BF64DF322CA03B500184FFB /* DebugViewController.swift in Sources */,
 				840A9C892227BA9800BB6C1D /* PeopleModel.swift in Sources */,
+				9B083DBB22F7C034008C8057 /* TableViewController.swift in Sources */,
 				9BAC076F22C6171300E77EC5 /* FilteringObservablesViewController.swift in Sources */,
 				84F85ECB222A5DFE003790E6 /* subjectsViewController.swift in Sources */,
 				9B8D029922EE922F0004A4FB /* Operators.swift in Sources */,

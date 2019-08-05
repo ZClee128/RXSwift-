@@ -4,6 +4,7 @@ platform :ios, '9.0'
 target 'studyRxswift' do
 	pod 'RxSwift',    '~> 4.0'
     	pod 'RxCocoa',    '~> 4.0'
+      pod 'RxDataSources'
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 	

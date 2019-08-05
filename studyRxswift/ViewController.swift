@@ -51,7 +51,10 @@ struct DataListModel {
         DataModel(className: UISliderViewController.init(), name: "UISliderViewController"),
         DataModel(className: BidirectionalDataViewController.init(), name: "BidirectionalDataViewController"),
         DataModel(className: UIGestureRecognizerViewController.init(), name: "UIGestureRecognizerViewController"),
-        DataModel(className: UIDatePickerViewController.init(), name: "UIDatePickerViewController")
+        DataModel(className: UIDatePickerViewController.init(), name: "UIDatePickerViewController"),
+        DataModel(className: TableViewController.init(), name: "TableViewController"),
+        DataModel(className: TableView2Controller.init(), name: "TableView2Controller"),
+        DataModel(className: SeachTableViewController.init(), name: "SeachTableViewController")
         ])
 }
 
