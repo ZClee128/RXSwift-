@@ -94,6 +94,7 @@ class TransformingViewController: UIViewController {
 //        相当于合并了两个
         let subject1 = BehaviorSubject(value: "A")
         let subject2 = BehaviorSubject(value: "1")
+        let subject3 = BehaviorSubject(value: "中文")
         
         //Variable is a wrapper for `BehaviorSubject`.
         let variable = Variable(subject1)
@@ -121,6 +122,13 @@ class TransformingViewController: UIViewController {
           variable.value = subject1
           subject2.onNext("3")
           subject2.onNext("4")
+        
+        // Whenever a new value is set, all the observers are notified of the change.
+        variable.value = subject3
+        subject3.onNext("中文2")
+        
+        //所以，666依旧会导引出来。此时，subject1、subject2、subject3都是有效的observers
+        subject2.onNext("666")
     }
     
     func testFlatMapLatest() {
