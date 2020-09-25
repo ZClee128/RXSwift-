@@ -11,50 +11,45 @@ import RxSwift
 import RxCocoa
 
 struct DataModel {
-    let className: AnyObject?
+    let className: UIViewController.Type?
     let name: String?
-    
-    init(className: AnyObject?, name: String?) {
-        self.className = className
-        self.name = name
-    }
 }
 
 struct DataListModel {
     let data = Observable.just([
-        DataModel(className: PeopleViewController.init(),name: "tableview"),
-        DataModel(className: ObservableViewController.init(), name: "Observable"),
-        DataModel(className: SubscribeViewController.init(), name: "Subscribe"),
-        DataModel(className: doOnViewController.init(), name: "doOn"),
-        DataModel(className: DisposeViewController.init(), name: "Dispose"),
-        DataModel(className: bindViewController.init(), name: "bindto"),
-        DataModel(className: exViewController.init(), name: "extension"),
-        DataModel(className: subjectsViewController.init(), name: "subject"),
-        DataModel(className: TransformingViewController.init(), name: "TransformingViewController"),
-        DataModel(className: FilteringObservablesViewController.init(), name: "FilteringObservablesViewController"),
-        DataModel(className: ConditionalBooleanOperatorsViewController.init(), name: "ConditionalBooleanOperatorsViewController"),
-        DataModel(className: CombiningObservablesViewController.init(), name: "CombiningObservablesViewController"),
-        DataModel(className: MathematicalAggregateOperatorsViewController.init(), name: "MathematicalAggregateOperatorsViewController"),
-        DataModel(className: ConnectableObservableOperatorsViewController.init(), name: "ConnectableObservableOperatorsViewController"),
-        DataModel(className: ObservableUtilityOperatorsViewController.init(), name: "ObservableUtilityOperatorsViewController"),
-        DataModel(className: ErrorHandlingOperatorsViewController.init(), name: "ErrorHandlingOperatorsViewController"),
-        DataModel(className: DebugViewController.init(), name: "DebugViewController"),
-        DataModel(className: TraitsViewController.init(), name: "TraitsViewController"),
-        DataModel(className: DriverViewController.init(), name: "DriverViewController"),
-        DataModel(className: ControlPropertyViewController.init(), name: "ControlPropertyViewController"),
-        DataModel(className: SchedulersViewController.init(), name: "SchedulersViewController"),
-        DataModel(className: UIlabelViewController.init(), name: "UIlabelViewController"),
-        DataModel(className: TextViewController.init(), name: "TextViewController"),
-        DataModel(className: UIButtonViewController.init(), name: "UIButtonViewController"),
-        DataModel(className: SwitchViewController.init(), name: "SwitchViewController"),
-        DataModel(className: UIActivityIndicatorViewController.init(), name: "UIActivityIndicatorViewController"),
-        DataModel(className: UISliderViewController.init(), name: "UISliderViewController"),
-        DataModel(className: BidirectionalDataViewController.init(), name: "BidirectionalDataViewController"),
-        DataModel(className: UIGestureRecognizerViewController.init(), name: "UIGestureRecognizerViewController"),
-        DataModel(className: UIDatePickerViewController.init(), name: "UIDatePickerViewController"),
-        DataModel(className: TableViewController.init(), name: "TableViewController"),
-        DataModel(className: TableView2Controller.init(), name: "TableView2Controller"),
-        DataModel(className: SeachTableViewController.init(), name: "SeachTableViewController")
+        DataModel(className: PeopleViewController.self,name: "tableview"),
+        DataModel(className: ObservableViewController.self, name: "Observable"),
+        DataModel(className: SubscribeViewController.self, name: "Subscribe"),
+        DataModel(className: doOnViewController.self, name: "doOn"),
+        DataModel(className: DisposeViewController.self, name: "Dispose"),
+        DataModel(className: bindViewController.self, name: "bindto"),
+        DataModel(className: exViewController.self, name: "extension"),
+        DataModel(className: subjectsViewController.self, name: "subject"),
+        DataModel(className: TransformingViewController.self, name: "TransformingViewController"),
+        DataModel(className: FilteringObservablesViewController.self, name: "FilteringObservablesViewController"),
+        DataModel(className: ConditionalBooleanOperatorsViewController.self, name: "ConditionalBooleanOperatorsViewController"),
+        DataModel(className: CombiningObservablesViewController.self, name: "CombiningObservablesViewController"),
+        DataModel(className: MathematicalAggregateOperatorsViewController.self, name: "MathematicalAggregateOperatorsViewController"),
+        DataModel(className: ConnectableObservableOperatorsViewController.self, name: "ConnectableObservableOperatorsViewController"),
+        DataModel(className: ObservableUtilityOperatorsViewController.self, name: "ObservableUtilityOperatorsViewController"),
+        DataModel(className: ErrorHandlingOperatorsViewController.self, name: "ErrorHandlingOperatorsViewController"),
+        DataModel(className: DebugViewController.self, name: "DebugViewController"),
+        DataModel(className: TraitsViewController.self, name: "TraitsViewController"),
+        DataModel(className: DriverViewController.self, name: "DriverViewController"),
+        DataModel(className: ControlPropertyViewController.self, name: "ControlPropertyViewController"),
+        DataModel(className: SchedulersViewController.self, name: "SchedulersViewController"),
+        DataModel(className: UIlabelViewController.self, name: "UIlabelViewController"),
+        DataModel(className: TextViewController.self, name: "TextViewController"),
+        DataModel(className: UIButtonViewController.self, name: "UIButtonViewController"),
+        DataModel(className: SwitchViewController.self, name: "SwitchViewController"),
+        DataModel(className: UIActivityIndicatorViewController.self, name: "UIActivityIndicatorViewController"),
+        DataModel(className: UISliderViewController.self, name: "UISliderViewController"),
+        DataModel(className: BidirectionalDataViewController.self, name: "BidirectionalDataViewController"),
+        DataModel(className: UIGestureRecognizerViewController.self, name: "UIGestureRecognizerViewController"),
+        DataModel(className: UIDatePickerViewController.self, name: "UIDatePickerViewController"),
+        DataModel(className: TableViewController.self, name: "TableViewController"),
+        DataModel(className: TableView2Controller.self, name: "TableView2Controller"),
+        DataModel(className: SeachTableViewController.self, name: "SeachTableViewController")
         ])
 }
 
@@ -76,7 +71,12 @@ class ViewController: UIViewController {
         mytable.rx.modelSelected(DataModel.self).subscribe({ event in
 //            self.present(event.element!.className as! UIViewController, animated: true, completion: {
 //            })
-            self.navigationController?.pushViewController(event.element!.className as! UIViewController, animated: true)
+           
+            let lVCClass = event.element?.className
+            if let lVCClass = lVCClass{
+                let lVC = lVCClass.init()
+                self.navigationController?.pushViewController(lVC, animated: true)
+            }
         }).disposed(by: disposeBag)
         
     }

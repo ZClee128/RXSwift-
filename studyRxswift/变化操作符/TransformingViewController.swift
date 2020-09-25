@@ -16,14 +16,15 @@ class TransformingViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = .white;
         // Do any additional setup after loading the view.
+        
 //        self.testBuffer()
 //        self.testwindow()
 //        self.testMap()
-//        self.testFlatMap()
+        self.testFlatMap()
 //        self.testFlatMapLatest()
 //        self.testConcatMap()
-        self.testScan()
-        self.testGroupBy()
+//        self.testScan()
+//        self.testGroupBy()
     }
     
     func testBuffer() {
@@ -31,16 +32,19 @@ class TransformingViewController: UIViewController {
         //        缓冲组合
         
         let subject = PublishSubject<String>()
-        //        1秒会缓冲3个一起抛出
+        //        1秒会缓冲3个一起以数组方式抛出。如果缓存不足3个，也会发出。
         subject
             .buffer(timeSpan: 1, count: 3, scheduler: MainScheduler.instance)
-            .subscribe(onNext: { print($0)})
+//        .debug("buffer:")
+            .subscribe(onNext: {
+                print($0)
+            })
             .disposed(by: disposeBag)
         
         subject.onNext("1")
         subject.onNext("2")
         subject.onNext("3")
-        
+
         subject.onNext("a")
         subject.onNext("b")
         subject.onNext("c")
@@ -65,10 +69,13 @@ class TransformingViewController: UIViewController {
         subject.onNext("a")
         subject.onNext("b")
         subject.onNext("c")
+//        print("Resources.total ", RxSwift.Resources.total)
         
         subject.onNext("1")
+//        print("Resources.total ", RxSwift.Resources.total)
         subject.onNext("2")
         subject.onNext("3")
+//        print("Resources.total ", RxSwift.Resources.total)
     }
 
     func testMap() {
@@ -87,18 +94,41 @@ class TransformingViewController: UIViewController {
 //        相当于合并了两个
         let subject1 = BehaviorSubject(value: "A")
         let subject2 = BehaviorSubject(value: "1")
+        let subject3 = BehaviorSubject(value: "中文")
         
+        //Variable is a wrapper for `BehaviorSubject`.
         let variable = Variable(subject1)
         
         variable.asObservable()
             .flatMap { $0 }
+//            .map { $0 }
             .subscribe(onNext: { print($0) })
             .disposed(by: disposeBag)
         
         subject1.onNext("B")
-        variable.value = subject2
-        subject2.onNext("2")
         subject1.onNext("C")
+
+        variable.value = subject2//效果：log:1
+
+        subject1.onNext("D")
+        subject1.onNext("E")
+        
+        //加了后，log出E,3,4
+        variable.value = subject1
+        subject2.onNext("3")
+        subject2.onNext("4")
+        
+        //再加了后，log出E。居然还能log3，4，有点难理解
+          variable.value = subject1
+          subject2.onNext("3")
+          subject2.onNext("4")
+        
+        // Whenever a new value is set, all the observers are notified of the change.
+        variable.value = subject3
+        subject3.onNext("中文2")
+        
+        //所以，666依旧会导引出来。此时，subject1、subject2、subject3都是有效的observers
+        subject2.onNext("666")
     }
     
     func testFlatMapLatest() {

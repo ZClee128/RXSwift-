@@ -39,6 +39,10 @@ class PeopleViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    deinit {
+        print(self,"dead")
+    }
+    
     
     /*
      // MARK: - Navigation
